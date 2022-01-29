@@ -20,6 +20,7 @@ class HomeFragmentViewModel(val repository: HomeRepository): ViewModel() {
         viewModelScope.launch {
             val result = repository.getDummyData()
 
+            //api response
             result.enqueue(object: Callback<String>{
                 override fun onResponse(call: Call<String>, response: Response<String>) {
                     val res = response.body()?.split("/")?.get(1)

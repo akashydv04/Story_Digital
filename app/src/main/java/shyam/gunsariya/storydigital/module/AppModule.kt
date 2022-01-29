@@ -8,7 +8,7 @@ import shyam.gunsariya.storydigital.data.apprepository.HomeFragRepositoryImpl
 import shyam.gunsariya.storydigital.data.repository.HomeRepository
 import shyam.gunsariya.storydigital.ui.main.viewmodel.HomeFragmentViewModel
 
-
+//koin dependency injection
 val networkModule = module {
     single { ApiClient.getClient() }
 }

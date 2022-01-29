@@ -10,6 +10,7 @@ import retrofit2.converter.scalars.ScalarsConverterFactory
 
 object ApiClient {
 
+    //retrofit connection
     private var retrofit: Retrofit? = null
 
     var gson: Gson = GsonBuilder()

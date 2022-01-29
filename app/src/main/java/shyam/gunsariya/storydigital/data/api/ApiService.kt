@@ -11,6 +11,7 @@ import shyam.gunsariya.storydigital.data.model.DummyModel
 
 interface ApiService {
 
+    //api method call
     @GET("/fjaqJ")
     fun getDummyData(): Call<String>
 }

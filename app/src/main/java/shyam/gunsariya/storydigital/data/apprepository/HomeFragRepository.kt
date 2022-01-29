@@ -7,6 +7,7 @@ import shyam.gunsariya.storydigital.data.api.ApiService
 import shyam.gunsariya.storydigital.data.model.DummyModel
 
 class HomeFragRepository(private val apiService: ApiService) {
+    // fragment repository
     fun getDummyData(): Call<String> {
         return apiService.getDummyData()
     }

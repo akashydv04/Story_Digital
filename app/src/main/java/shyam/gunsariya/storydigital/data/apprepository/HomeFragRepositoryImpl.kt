@@ -7,6 +7,8 @@ import shyam.gunsariya.storydigital.data.model.DummyModel
 import shyam.gunsariya.storydigital.data.repository.HomeRepository
 
 class HomeFragRepositoryImpl(private val repository: HomeFragRepository): HomeRepository {
+
+    //fragment repository implementation
     override fun getDummyData(): Call<String> {
         return repository.getDummyData()
     }
